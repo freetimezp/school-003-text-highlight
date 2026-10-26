@@ -1,18 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn HTML text highlighting with mark, text color, and CSS backgrounds."
+        />
+        <title>003 — Text Highlight Effects</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header class="topbar">
+            <a class="brand" href="./">CODE<span>LAB</span></a>
+            <span class="lesson-number">LESSON 003 / 1000</span>
+            <a
+                class="back-link"
+                href="https://freetimezp.github.io/school-002-paragraph/"
+            >
+                Previous lesson ↗
+            </a>
+        </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+        <main>
+            <section class="hero">
+                <p class="eyebrow">HTML & CSS / TEXT STYLING</p>
+                <h1>
+                    Make words<br />
+                    <span>stand out.</span>
+                </h1>
+                <p class="intro">
+                    Learn to highlight meaningful text, change its color, and
+                    paint beautiful backgrounds with simple HTML and CSS.
+                </p>
+                <a class="start-link" href="#lesson">
+                    Explore the lesson <span>↓</span>
+                </a>
+            </section>
 
-<body>
-    start
+            <section class="lesson-section" id="lesson">
+                <div class="section-heading">
+                    <p class="eyebrow">01 — THE ELEMENT</p>
+                    <h2>Meet <code>&lt;mark&gt;</code></h2>
+                    <p>
+                        Use mark to identify text relevant to the surrounding
+                        content. Its default yellow appearance can be customized
+                        with CSS.
+                    </p>
+                </div>
 
-    <script src="./assets/js/main.js"></script>
-</body>
+                <article class="example-card">
+                    <span class="example-label">LIVE EXAMPLE</span>
+                    <p class="sample-text">
+                        Design is not just what you see.
+                        <mark>It is how clearly you communicate.</mark>
+                    </p>
+                    <pre><code>&lt;p&gt;Design is not just what you see.&lt;mark&gt;It is how clearly you communicate.&lt;/mark&gt;&lt;/p&gt;</code></pre>
+                </article>
+            </section>
 
+            <section class="lesson-section">
+                <div class="section-heading">
+                    <p class="eyebrow">02 — THE COLOR</p>
+                    <h2>Change the mood.</h2>
+                    <p>Experiment with text colors and backgrounds.</p>
+                </div>
+
+                <div class="color-lab">
+                    <div class="lab-preview" id="preview">
+                        <p>CREATIVE NOTE / 003</p>
+                        <h3 id="previewText">
+                            Great ideas deserve
+                            <span class="highlight-word">attention.</span>
+                        </h3>
+                    </div>
+
+                    <div class="lab-controls">
+                        <label for="textColor">Text color</label>
+                        <input id="textColor" type="color" value="#191919" />
+
+                        <label for="backgroundColor">
+                            Highlight background
+                        </label>
+
+                        <input
+                            id="backgroundColor"
+                            type="color"
+                            value="#d9ff43"
+                        />
+
+                        <label for="highlightStyle">Highlight style</label>
+                        <select id="highlightStyle">
+                            <option value="marker">Marker</option>
+                            <option value="rounded">Rounded</option>
+                            <option value="underline">Underline</option>
+                            <option value="solid">Solid block</option>
+                        </select>
+
+                        <button id="resetLab" type="button">
+                            Reset experiment ↺
+                        </button>
+                    </div>
+                </div>
+
+                <pre
+                    class="output-code"
+                ><code id="cssOutput">/* Your CSS will appear here */</code></pre>
+            </section>
+
+            <section class="lesson-section">
+                <p class="eyebrow">03 — REMEMBER THIS</p>
+                <h2>Meaning first. Style second.</h2>
+
+                <div class="rule-list">
+                    <p>
+                        <code>&lt;mark&gt;</code> — semantically relevant
+                        highlighted text.
+                    </p>
+                    <p>
+                        <code>color</code> — changes the foreground text color.
+                    </p>
+                    <p>
+                        <code>background-color</code> — changes the background.
+                    </p>
+                    <p>
+                        <code>&lt;span&gt;</code> — a neutral wrapper for
+                        decorative styling.
+                    </p>
+                </div>
+            </section>
+
+            <footer class="lesson-footer">
+                <span>HTML LEARNING ROADMAP</span>
+                <a href="https://freetimezp.github.io/school-002-paragraph/">
+                    Lesson 002 ←
+                </a>
+            </footer>
+        </main>
+
+        <script src="./assets/js/main.js" defer></script>
+    </body>
 </html>
